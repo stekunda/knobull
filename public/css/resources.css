@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+  /*  background-color: #00aeff; */
+}
+
+body {
+    background-color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+section {
+    padding: 1em 0em;
+   /* padding: 15%; */
+}
+
+
+p {
+    text-decoration: none;
+    background-color: white;
+    letter-spacing: 1px;
+    color: black;
+    font-family: Kana-Sans-Medium;
+   /* padding: 1px 1px 1px 1px; */
+}
+
+
+
+
+
+.subheader_img {
+    background-image: url(../images/MountainTop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 65vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+.sh_text {
+    color: white;
+    background-color: var(--clr-dark);
+    letter-spacing: 1px;
+    margin-left: 70%;
+   
+    
+    font-size: 3.2vw;
+ 
+   
+}
+
+
+.header_title {
+  
+  text-align: center;
+    color: white;
+    font-size: 75px;
+    font-size: 6.8vw;
+  
+    
+    
+}
+
+.toplogo {
+    display: block;
+    height: 30vw;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--clr-dark);
+    position: relative;
+}
+
+.para_body_info {
+    background-color: white;
+    font-size: 20px;
+    font-family: Kana-Sans-Medium;
+   
+    margin: 0 auto;
+    
+
+}
+
+.header-block {
+    background-color: var(--clr-dark);
+    /*display: block;
+    position: relative;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+
+    
+}
+
+#navicon{
+    font-size:4vw;
+    cursor:pointer;
+    margin-left: 10px;
+    -webkit-margin-top-collapse: collapse;
+}

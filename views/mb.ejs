@@ -1,0 +1,356 @@
+﻿<html>
+<head>
+  <title>Knobull Message Board</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+  <script src="javascripts/angularApp.js"></script>
+  <style> .glyphicon-thumbs-up { cursor:pointer } </style>
+  <link href="/css/mb.css" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <link rel="icon" href="../public/images/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="text/html; charset=UTF-8;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Research for students, developed by students">
+  <meta name="keywords" content="knobull, messageboard, Lynn Bentley, research, research engine, students">
+  <meta name="author" content="">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.3.js"></script>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+</head>
+<body ng-app="knobullMB">
+  <!-- header -->
+    <header>
+
+        <head>
+            <title>Privacy</title>
+            <!-- <link href="main.css" rel="stylesheet " type="text/css"> -->
+            <!-- <script type="text/javascript" src="act.js"></script> -->
+            <!--<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> -->
+        </head>
+    
+        <body>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a ng-href="/" onclick="window.location.reload();" class="c-menu__link">Home</a>
+                <a href="/about">About Us</a>
+                <a href="https://knobull-messageboard.herokuapp.com/" target="_blank">Message Board</a>
+                <a href="https://www.linkedin.com/company/knobull-inc/">Company Page</a>
+                <a href="https://www.prlog.org/news/tag/knobull-com/#">Press Release</a>
+                <a href="/contact">Contact</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/resources">Resources</a>
+                <a href="https://twitter.com/knobullit">Student News</a>
+            </div>
+
+
+
+            <span style="font-size:30px;cursor:pointer" id = "navicon" onclick="openNav()">&#9776;</span>
+
+
+
+
+        </body>
+
+          <!-- Page Content -->
+          <div id="page-content-wrapper">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-lg-12">
+                      <!--    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                      <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a> -->
+
+      <!-- /#wrapper -->
+
+    <!-- BEGIN javascript for nav bar -->
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+    </script>
+
+    <script>
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <!-- END javascript for nav bar-->
+
+      <!--main view for angular js-->
+      <!-- <script src="Slide-Push-Menus-master/js/dist/menu.js"></script> -->
+      <script>
+        /**
+         * Slide right instantiation and action.
+         */
+        var slideRight = new Menu({
+          wrapper: '#o-wrapper',
+          type: 'slide-right',
+          menuOpenerClass: '.c-button',
+          maskId: '#c-mask'
+        });
+
+        var slideRightBtn = document.querySelector('#c-button--slide-right');
+
+        slideRightBtn.addEventListener('click', function(e) {
+          //alert("Santosh");
+          e.preventDefault;
+          slideRight.open();
+        });
+      </script>
+
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    $(document).ready(function(){
+      $.getJSON("https://www.faroo.com/api?q=google&start=1&l=en&src=web&f=json",
+          function(data){
+            $.each(data.results, function(i,item){
+        jQuery('<div/>', {  text: item.title }).appendTo('#results');
+            });
+          });
+    });
+    </script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/messageboard.js"></script>
+    <script src="scripts/controllers/blog.js"></script>
+    <script src="scripts/controllers/privacy.js"></script>
+    <script src="scripts/controllers/learn.js"></script>
+    <script src="scripts/controllers/SearchController.js"></script>
+    <script src="scripts/lib/dirPagination.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--------Bower--->
+
+    <script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
+        <div class="flash-message" ng-if="flash">
+            <div class="{{'alert alert-' + flash.type}}" ng-bind="flash.message"></div>
+        </div>
+    </header>
+
+   <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <ui-view></ui-view>
+    </div>
+  </div>
+
+  <script type="text/ng-template" id="/home.html">
+    <div class="page-header">
+      <h1 class="main-title">Knobull Message Board</h1>
+    </div>
+    <div id="options-menu" align="center">
+      <form action="/messageboard#/addpost">
+        <input class="btn btn-primary" type="submit" value="Ask a question" />
+      </form>
+    </div>
+
+    <div id="threads-list" ng-repeat="post in posts | orderBy: '-upvotes'">
+      <div class="thread">
+        <div class="stats">
+          <div isolate id="voting">
+            <div class="upvote" ng-attr-id="{{ 'upvote-' + $index }}" ng-click="upvote(post)" ng-class="{true:'up', false:'upvote'}[post.upvoted]"></div>
+            <div class="downvote" ng-attr-id="{{ 'downvote-' + $index }}" ng-click="downvote(post)" ng-class="{true:'down', false:'downvote'}[post.downvoted]"></div>
+          </div>
+          <div class="stat">
+            <p>{{post.upvotes}} <span class="caption">votes</span></p>
+          </div>
+          <div class="stat">
+            <p>({{post.comments.length}}) <span class="caption"><a href="#/posts/{{post._id}}">Responses</a></span></p>
+          </div>
+          <div class="stat">
+            <p>{{ posts.views }} <span class="caption">views</span></p>
+          </div>
+          <div class="question">
+            <h3 class="question-title" style="display: inline" ng-click="updateViews($index)">
+              <a href="#/posts/{{post._id}}">{{post.title}}</a>
+            </h3>
+            <div class="submission">
+              <p class="submission-data">Submitted by {{post.author}}</p>
+            </div>
+          </div class="question>"
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </script>
+
+  <script type="text/ng-template" id="/addpost.html">
+    <form ng-submit="addPost()"   style="margin-top:30px">
+      <h3>Add a new post:</h3>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Title"  ng-model="title">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control post-submission" ng-model="link">
+      </div>
+
+      <button type="submit" class="btn btn-primary" href="/#/home">Post</button>
+    </form>
+
+  </script>
+
+  <script type="text/ng-template" id="/posts.html">
+    <div class="page-header">
+      <h3>
+        <span ng-show="post.title" href="{{post.link}}">
+          {{post.title}}
+      </h3>
+    </div>
+    <div class='post-body' class="page-header">
+      <span class='body' ng-show="post.title">
+        {{post.link}}
+      </span>
+    </div>
+    <div>
+    </div>
+    <div class="comment-section" ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+      <div class="comment">
+        <div class="comment-text" style="font-size:13px; margin-left:10px;">
+          {{comment.body}}
+        </div>
+        <div class="comment-votes">
+          <span class="glyphicon glyphicon-thumbs-up" ng-click="upvote(comment)"></span>
+          {{comment.upvotes}}
+          <span class="glyphicon glyphicon-thumbs-down" ng-click="downvote(comment)"></span>
+        </div>
+        <div class="comment-author">
+          - by {{comment.author}}
+        </div>
+      </div>
+    </div>
+
+    <form ng-submit="addComment()"  style="margin-top:30px;">
+      <h3>Add a new comment</h3>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Comment" ng-model="body"></input>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+  </script>
+
+  <script type="text/ng-template" id="/register.html">
+	  <div class="page-header">
+	    <h1>Knobull</h1>
+	  </div>
+
+	  <div ng-show="error" class="alert alert-danger row">
+	    <span>{{ error.message }}</span>
+	  </div>
+
+	  <form ng-submit="register()"
+	    style="margin-top:30px;">
+	    <h3 class="text-center">Register</h3>
+
+	    <div class="form-group">
+	      <input type="text"
+	      class="form-control"
+	      placeholder="Username"
+	      ng-model="user.username"></input>
+	    </div>
+	    <div class="form-group">
+	      <input type="password"
+	      class="form-control"
+	      placeholder="Password"
+	      ng-model="user.password"></input>
+	    </div>
+      <center>
+	    <button type="submit" class="btn btn-primary">Register</button>
+      <br>
+      <br>
+      <a href="/messageboard#/login">Have an account? Click here to login</a>
+      </center>
+	  </form>
+	</script>
+
+
+	<script type="text/ng-template" id="/login.html">
+	  <div class="page-header">
+	    <h1>Knobull</h1>
+	  </div>
+
+	  <div ng-show="error" class="alert alert-danger row">
+	    <span>{{ error.message }}</span>
+	  </div>
+
+	  <form ng-submit="logIn()"
+	    style="margin-top:30px;">
+	    <h3 class="text-center">Log In</h3>
+
+	    <div class="form-group">
+	      <input type="text"
+	      class="form-control"
+	      placeholder="Username"
+	      ng-model="user.username"></input>
+	    </div>
+	    <div class="form-group">
+	      <input type="password"
+	      class="form-control"
+	      placeholder="Password"
+	      ng-model="user.password"></input>
+	    </div>
+      <center>
+	    <button type="submit" class="btn btn-primary">Log In</button>
+      <br>
+      <br>
+      <a href="/messageboard#/register">New User? Click here to register</a>
+      </center>
+	  </form>
+  </script>
+ <!-- Default Statcounter code for Business Website https://Knobull.com -->
+ <script type="text/javascript">
+  var sc_project=12383951;
+  var sc_invisible=1;
+  var sc_security="d7c37afd";
+  var sc_https=1;
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12383951/0/d7c37afd/1/" alt="Web Analytics"></a></div></noscript>
+  <!-- End of Statcounter Code -->
+  </body>
+</html>

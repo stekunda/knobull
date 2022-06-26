@@ -1,0 +1,94 @@
+<div ng-controller="SearchController">
+  <div  ng-show="show">
+    <div class="text-center search-logo" >
+      <p class="container-fluid">
+        <center>
+          <a href=/#>
+        <img src="images/logo-small1.png" class="img-responsive" alt="I'm a Bulldog" ></a>
+      </center>
+      </p>
+    </div>
+      <div class="row search-input"  style="float:center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <center>
+          <div class="input-group">
+            <input type="text" class="form-control " placeholder="Search here"  ng-model="search" style="background-color:white"/>
+            <!-- <span class="input-group-btn"><a href=""> <i ng-click="searching(search)" <button class="glyphicon glyphicon-search"</a></i></button>Go!</span> -->
+          <!--  <span class="input-group-addon" ><a href=""><i ng-click="searching(search)" class="fa fa-search fa-2x"></a></i></span> -->
+
+            <span class="input-group-addon" ><a href=""><i ng-click="searching(search)" ng-enter="searching(search)" class="fa fa-search fa-2x"></a></i></span>
+          </div><!-- /input-group -->
+        </center>
+    <!--   </div>/.col-lg-4 -->
+       </div><!-- /.row -->
+     </div>
+     <div class="search-input ">
+      <center>
+    <!--  <a ng-href="#/learn" style="color: #777777" >Learning Center</a> -->
+      <a href="https://www.linkedin.com/pulse/steps-help-avoid-flu-lynn-bentley" style="color: #777777" >Learning Center</a>
+     </center>
+
+   </div>
+</div>
+
+
+<!-- Search -->
+<div ng-hide="hide" class="left" >
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-md-3">
+        <a href="#/">
+        <img src="images/logogloss.png" class="img-responsive" alt="I'm a Bulldog" style="width:80px;height:80px"></a>
+      </div>
+      <div class="col-md-9">
+      <br/>
+        <div class="input-group">
+            <span class="input-group-addon" ><a href=""><i ng-click="searching(search)" ng-enter=:"searching(search)" class="fa fa-search fa-2x"></a></i></span>
+        </div>
+        <br/>
+    </div>
+</div>
+
+</div>
+<br/>
+<div class="jumbotron" ng-hide="custom" style="width:80%;heigth:30%">
+<div class="container-fluid">
+    <div class="row">
+    <div ng-repeat="x in data2.results">
+
+            <div class="col-md-4 col-sd-4 col-xs-4 col-lg-4">
+              <a href="#/"
+                <img src="{{x.iurl}}" style="heigth:100%;width:100%"></img></a>
+            </div>
+
+        </div>
+    </div>
+        <br/>
+</div>
+</div>
+<div class="container-fluid" ng-show="custom"></div>
+
+<div class="container-fluid" >
+    <div dir-paginate="x in data2.results|itemsPerPage:5">
+        <div class="row">
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.url}}"> {{x.title}}</a>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <p class="content">{{x.kwic}}</p>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.domain}}" class="domain">{{x.domain}}</p>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>
+</div></div></div>
+<center>
+<dir-pagination-controls
+                    max-size="5"
+                    direction-links="true"
+                    boundary-links="true" >
+                </dir-pagination-controls>
+</center>

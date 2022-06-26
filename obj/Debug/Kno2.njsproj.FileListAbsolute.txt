@@ -1,0 +1,3 @@
+C:\Users\chingon\Downloads\Knobull2\K2\obj\Debug\Kno2.njsprojAssemblyReference.cache
+C:\Users\chingon\Downloads\Knobull2\K2\obj\Debug\Kno2.njsproj.CoreCompileInputs.cache
+C:\Users\chingon\Downloads\Knobull2\K2\bin\Microsoft.NodejsTools.WebRole.dll

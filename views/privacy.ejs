@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../public/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="text/html; charset=UTF-8;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Research for students, developed by students">
+    <meta name="keywords" content="knobull, messageboard, Lynn Bentley, research, research engine, students">
+    <meta name="author" content="">
+    <title>Knobull Inc | Privacy</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- RaleWay-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <!-- Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- other css -->
+    <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.3.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <!-- endbuild -->
+    <!---end of other css-->
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!-- <link href="/css/privacy.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/privacystyles.css" rel="stylesheet" type="text/css">
+    <!-- <title>Privacy Page</title> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="knobullApp">
+  <head>
+    <title>Privacy</title>
+    <!-- <link href="main.css" rel="stylesheet " type="text/css"> -->
+    <!-- <script type="text/javascript" src="act.js"></script> -->
+    <!--<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> -->
+</head>
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a ng-href="/" onclick="window.location.reload();" class="c-menu__link">Home</a>
+        <a href="/about">About Us</a>
+        <a href="https://knobull-messageboard.herokuapp.com/" target="_blank">Message Board</a>
+        <a href="https://www.linkedin.com/company/knobull-inc/">Company Page</a>
+        <a href="https://www.prlog.org/news/tag/knobull-com/#">Press Release</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/resources">Resources</a>
+        <a href="/studentnews">Student News</a>
+    </div>
+
+
+
+    <span style="font-size:30px;cursor:pointer" id = "navicon" onclick="openNav()">&#9776;</span>
+    <!--  <div  class="kno" > </div>  -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!--    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a> -->
+                    <!-- /#wrapper -->
+                    <!-- BEGIN javascript for nav bar -->
+                    <script>
+                        function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                        document.getElementById("main").style.marginLeft = "250px";
+                        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                        }
+                    </script>
+
+                    <script>
+                        function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                        document.getElementById("main").style.marginLeft = "0";
+                        document.body.style.backgroundColor = "white";
+                        }
+                    </script>
+
+                    <!-- END javascript for nav bar-->
+                    <!--main view for angular js-->
+                    <!-- <script src="Slide-Push-Menus-master/js/dist/menu.js"></script> -->
+                    <script>
+                        /**
+                        * Slide right instantiation and action.
+                        */
+                        var slideRight = new Menu({
+                        wrapper: '#o-wrapper',
+                        type: 'slide-right',
+                        menuOpenerClass: '.c-button',
+                        maskId: '#c-mask'
+                        });
+
+                        var slideRightBtn = document.querySelector('#c-button--slide-right');
+
+                        slideRightBtn.addEventListener('click', function(e) {
+                        //alert("Santosh");
+                        e.preventDefault;
+                        slideRight.open();
+                        });
+                    </script>
+
+
+
+                    <script src="https://code.jquery.com/jquery-latest.js"></script>
+                    <script>
+                        $(document).ready(function(){
+                        $.getJSON("https://www.faroo.com/api?q=google&start=1&l=en&src=web&f=json",
+                        function(data){
+                        $.each(data.results, function(i,item){
+                        jQuery('<div/>', {  text: item.title }).appendTo('#results');
+                        });
+                        });
+                        });
+                    </script>
+                    <header>
+                      <!--  <h1 class="top-header">ABOUT KNOBULL, Inc. </h1>  -->
+                  </header>
+                    <section class="subheader_img">
+                      <div class="container h-100">
+                        <div class="header-block">
+                          <br><br><br><br><br>
+                          <h1 class="header_title">Privacy Policy</h1>
+                          <img src="images/blue-bg-logo.png" class="toplogo" />
+                            <h5 class="sh_text">We don't collect or
+                            <br>  distribute personal<br>
+                              data!</h5>
+                            <br><br><br>
+                        </div>
+                      </div>
+                  </section>
+                    <!-- <header class="masthead"> -->
+                      <!-- <div class="container h-100"> -->
+                          <!-- <div class="row h-100 align-items-center justify-content-center text-center">
+                              <div class="col-lg-10 align-self-end">
+                                  <h1 style="font-size:8rem" class="text-uppercase text-white font-weight-bold" >Privacy Policy</h1>
+                                  <br><br><hr class="divider my-4" />
+                                  <h1 class="text-uppercase text-white font-weight-normal">Your DATA IS SECURE </h1>
+                                  <h2 class="text-uppercase text-white font-weight-normal">because we don't collect or distribute any personal information!</h2>
+                                  
+                              </div>
+                              <div class="col-lg-8 align-self-baseline"></div>
+
+                              </div>
+                          </div> -->
+                      <!-- </div> -->
+                    <!-- </header> -->
+                        <!-- <h2 class="header_title">Privacy Policy </h2>
+                      
+                        <img src="images/bg-masthead.jpg" />
+                        <h2 class="text-uppercase text-white font-weight-bold"></h2>
+                    </header> -->
+                <!-- </div> -->
+                <!--
+                  <div>
+                      <h2 class="header_title">Privacy Policy</h2>
+                      <img src="images/blue-bg-logo.png" />
+                      <h2 class="header_title_2">Your data is secure because we don't collect or distribute any personal information!</h2>
+                  </div>
+                -->
+                
+              <section class="masthead">
+                <!-- <div class="text-muted mb-0"> -->
+                  <div class="container">
+
+
+                    <br> <br>
+                    <p>This privacy policy applies to Knobull, Inc. services, applications and other products that link to this privacy policy.</p>
+                    <p>The Knobull Team is committed to protecting the privacy of its user community. The intent of this privacy policy is to insure users that we will not gather information about individuals who interact with our services.</p>
+                    <p>Knobull prevents leakage by default. Instead, when you click on a link on our site, we route (redirect) that request in such a way so that it does not send your interface to other sites. The other sites will still know that you visited but they will not know what connection you entered beforehand.</p>
+                    <p>Other search engines and blog sites save your interface history. Usually your connections are saved along with the date and time of the interface, some information about your computer (e.g. your IP address, User agents and often a unique identifier stored in a browser cookies) and if you are logged in, your account information (e.g. name and email address). Also, with this information your interfaces can be tied together. This means someone can see all your activity,  not just one isolated interface. You can usually find out a lot about a person from this history.</p>
+                    <p>For these reasons, Knobull takes the approach to not collect any personal information. The decisions of whether and how to comply with law enforcement requests, whether and how to anonymize data, and how to best protect your information from hackers are out of our hands. Your personal history is safe with us because it cannot be tied to you in any way.</p>
+                    <p>We save blog users’s email address but again, not in a personally identifiable way, as we do not store IP addresses or unique User agent strings. We use aggregate, non-personal data to improve our service. If you contact us, it may be stored in our email. However, you can give anonymous feedback (by not entering your email or other personal info on the feedback form).</p>
+                    <p>
+                        At times we do add an affiliate code to some eCommerce sites (e.g. Amazon & eBay) that results in small commissions being paid back to Knobull when our users make purchases at those sites. We do not use any third parties to do the code insertion, and we do not work with any sites that share personally identifiable information (e.g. name, address, etc.) via their affiliate programs. This means that no information is shared from Knobull to the sites, and the only information that is collected from this process is product information. This is not tied to any particular user and we do not save or store such information. This whole affiliate process is part of our business model to reduce promotions on Knobull. These native promotions are blended into the content of Blog articles and will always be unobtrusive to
+                        readers.
+                    </p>
+                    <p>Also, like anyone else, we will comply with court ordered legal requests. However, in our case, we don't expect any because there is nothing useful to give them since we don't collect any personal information. </p>
+                    <p>Please note that this policy applies only to Knobull, Inc. services and not to the sites of other companies or organizations to which we provide links or to any software that may be downloaded from our site. All research expert organizations that use our blog post development support and distribution services will be fully informed of our security policy and will understand that continued use of our support are contingent on their compliance. </p>
+                    <p>Lynn Bentley, President, wrote this policy and if you have questions or input, please submit feedback.</p>
+                <!-- </div> -->
+              </div>
+            </section>
+              <footer class="bg-light py-5">
+                <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Knobull</div></div>
+            </footer>
+
+
+
+                <!-- <h1>Business Focus</h1>
+
+                <h4>MARKET DRIVEN STRATEGY </h4>
+
+                <h6><p>The company leadership team comprised of a seasoned Internet services chief executive, corporate technology marketing and systems development executive and financial executive with extensive technology venture start-up expertise, plans to launch a meta search engine (MSE) App platform during the fall, 2014. The development team is in place and near completion of the design process for a  tool that sends iPhone user requests to several other search engines and/or databases and will aggregate the results into a single list. The key market differentiation, supported by extensive market research, will be creation of a platform specifically designed to enhance the "personalized and secure" search experience for youthful iPhone users. </p>
+
+                <p>The foundation is a client-server system that is expandable to the youth market in highly populated US regions (e.g., Boston, NYC, NJ, Chicago, LA, Dallas, San Francisco).There is solid market evidence that the capture of a 1% market niche of the projected $21 billion mobile search ad market in 2017 can lead to a $100-200 million revenue stream and attractive profitability. This platform will operate on the premise that displaying Internet data is too extensive for any one search engine to completely index and more comprehensive results can be obtained by combining the results from several search engines. </p>
+
+                <p> In addition the Learning Center will combine articles and materials to encourage users to stay. Mixed into the stream will be unique ads similar to sponsored posts, looking like other articles but sponsored by youth oriented brands. </p>
+
+                </h6>
+                -->
+            </div>
+        </div>
+
+        <center>
+            <dir-pagination-controls max-size="5"
+                                     direction-links="true"
+                                     boundary-links="true">
+            </dir-pagination-controls>
+        </center>
+
+
+
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- end of main view -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/messageboard.js"></script>
+    <script src="scripts/controllers/blog.js"></script>
+    <script src="scripts/controllers/privacy.js"></script>
+    <script src="scripts/controllers/learn.js"></script>
+    <script src="scripts/controllers/SearchController.js"></script>
+    <script src="scripts/lib/dirPagination.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--------Bower--->
+
+    <script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        });
+        $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+    </div>
+    </div>
+    </div>
+    </div>
+ <!-- Default Statcounter code for Business Website https://Knobull.com -->
+ <script type="text/javascript">
+    var sc_project=12383951;
+    var sc_invisible=1;
+    var sc_security="d7c37afd";
+    var sc_https=1;
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12383951/0/d7c37afd/1/" alt="Web Analytics"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+</body>
+</html>

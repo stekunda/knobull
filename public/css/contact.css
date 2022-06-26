@@ -1,0 +1,107 @@
+*   {
+  padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background-color: #67ADF3 ;
+}
+
+.sh_text {
+  text-align:center; 
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.jumbotron
+{
+  /*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img4.jpg);*/
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-main
+{
+  /*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img4.jpg);*/
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.top-header {
+  text-align:center;
+  vertical-align: text-top;
+  color: white;
+  font-size: 7vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p   {
+  color: black;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: text-bottom;
+  /*text-shadow: 1px 1px; */
+  top: 50px;
+  transform: translateY(65px);
+}
+
+.name {
+  color: white;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: left;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+ background-color: #D3D3D3;  
+ /*  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img4.jpg);  */
+  padding: 20px;
+}
+
+
+.column {
+  float: right;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#navicon{
+  font-size:4vw;
+  cursor:pointer;
+  margin-left: 10px;
+  -webkit-margin-top-collapse: collapse;
+}

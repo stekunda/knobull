@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+  /*  background-color: #00aeff; */
+}
+
+body {
+    background-color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+section {
+    padding: 1em 0em;
+   /* padding: 15%; */
+}
+
+
+p {
+    background-color: white;
+    letter-spacing: 1px;
+    color: black;
+    font-family: Kana-Sans-Medium;
+   /* padding: 1px 1px 1px 1px; */
+}
+
+
+/*
+p {
+    background-color: white;
+    font-size: 1.5vw;
+    vertical-align: text-bottom;
+    color: black;
+    text-align: left;
+    padding-top: 2%;
+    letter-spacing: 1px;
+}
+*/
+.topheader_img {
+    background-color: var(--clr-dark);
+    position: relative;
+    background-size: cover;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.subheader_img {
+    background-image: url(../images/MountainTop.png);
+    background-color: var(--clr-dark);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 65vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    color: var(--clr-light);
+}
+
+.sh_text {
+    color: white;
+    background-color: var(--clr-dark);
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 60%;
+    width: 100%;
+    font-size: 4.5vw;
+    
+}
+
+.header-block {
+    background-color: var(--clr-dark);
+    /*display: block;
+    position: relative;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    
+}
+
+.header_title {
+    background-color: var(--clr-dark);
+    color: white;
+    font-size: 65px;
+    font-size: 6.5vw;
+    text-align: center;
+}
+
+.toplogo {
+    display: block;
+    height: 30vw;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--clr-dark);
+    position: relative;
+}
+/*
+.para_body {
+    background-color: white;
+}
+*/
+.para_body_info {
+    background-color: white;
+    font-size: 23px;
+    font-family: Kana-Sans-Medium;
+   
+    margin: 0 auto;
+    
+
+}
+
+#navicon{
+    font-size:4vw;
+    cursor:pointer;
+    margin-left: 10px;
+    -webkit-margin-top-collapse: collapse;
+}
+
+/*
+.top-header {
+   
+  text-align:center;
+  vertical-align: text-top;
+  color: black;
+  font-size: 7vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*/
+/*
+
+
+.sub-header {
+  color: white;
+}
+
+*/

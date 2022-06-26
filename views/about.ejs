@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../public/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="text/html; charset=UTF-8;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Research for students, developed by students">
+    <meta name="keywords" content="knobull, messageboard, Lynn Bentley, research, research engine, students">
+    <meta name="author" content="">
+    <title>Knobull Inc - About Us</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- RaleWay-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <!-- Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- other css -->
+    <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.3.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <!-- endbuild -->
+    <!---end of other css-->
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="/css/aboutstyles.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="knobullApp">
+
+    <head>
+        <title>Privacy</title>
+        <!-- <link href="main.css" rel="stylesheet " type="text/css"> -->
+        <!-- <script type="text/javascript" src="act.js"></script> -->
+        <!--<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> -->
+    </head>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a ng-href="/" onclick="window.location.reload();" class="c-menu__link">Home</a>
+        <a href="/about">About Us</a>
+        <a href="https://knobull-messageboard.herokuapp.com/" target="_blank">Message Board</a>
+        <a href="https://www.linkedin.com/company/knobull-inc/">Company Page</a>
+        <a href="https://www.prlog.org/news/tag/knobull-com/#">Press Release</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/resources">Resources</a>
+        <a href="/studentnews">Student News</a>
+    </div>
+
+
+
+    <span style="font-size:30px;cursor:pointer" id = "navicon" onclick="openNav()">&#9776;</span>
+
+
+
+
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a> -->
+                    <!-- /#wrapper -->
+                    <!-- BEGIN javascript for nav bar -->
+                    <script>
+                        function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                        document.getElementById("main").style.marginLeft = "250px";
+                        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                        }
+                    </script>
+
+                    <script>
+                        function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                        document.getElementById("main").style.marginLeft = "0";
+                        document.body.style.backgroundColor = "white";
+                        }
+                    </script>
+
+                    <!-- END javascript for nav bar-->
+                    <!--main view for angular js-->
+                    <!-- <script src="Slide-Push-Menus-master/js/dist/menu.js"></script> -->
+                    <script>
+                        /**
+                        * Slide right instantiation and action.
+                        */
+                        var slideRight = new Menu({
+                        wrapper: '#o-wrapper',
+                        type: 'slide-right',
+                        menuOpenerClass: '.c-button',
+                        maskId: '#c-mask'
+                        });
+
+                        var slideRightBtn = document.querySelector('#c-button--slide-right');
+
+                        slideRightBtn.addEventListener('click', function(e) {
+                        //alert("Santosh");
+                        e.preventDefault;
+                        slideRight.open();
+                        });
+                    </script>
+
+
+
+                    <script src="https://code.jquery.com/jquery-latest.js"></script>
+                    <script>
+                        $(document).ready(function(){
+                        $.getJSON("https://www.faroo.com/api?q=google&start=1&l=en&src=web&f=json",
+                        function(data){
+                        $.each(data.results, function(i,item){
+                        jQuery('<div/>', {  text: item.title }).appendTo('#results');
+                        });
+                        });
+                        });
+                    </script>
+                  <!-- <body> -->
+                    <header>
+                      <!--  <h1 class="top-header">ABOUT KNOBULL, Inc. </h1>  -->
+                  </header>
+                    
+                        <!-- <section class="subheader_img">
+                            <div class="header-block">
+                                <h1 class="header_title">About Knobull</h1>
+                                <img src="images/blue-bg-logo.png" class="toplogo" />
+                                <h2 class="sh_text">
+                                    Setting a high <br />standard of trust!
+                                </h2>
+                            </div>
+                        </section> -->
+                        <section class="subheader_img">
+                          <div class="container h-100">
+                            <div class="header-block">
+                              <!-- <br><br><br><br><br> -->
+                              <h1 class="header_title">About Knobull</h1>
+                              <img src="images/blue-bg-logo.png" class="toplogo" />
+                                <h5 class="sh_text"> Setting a high
+                                  <br> standard of trust!</h5>
+                                <br>
+                            </div>
+                          </div>
+                      </section>
+                        <!-- <h4 class="sub-header">ABOUT KNOBULL, Inc. </h4> -->
+                        <section class="masthead">
+                          <!-- <div class="text-muted mb-0"> -->
+                            <div class="container">
+          
+          
+                              <br> <br>
+                              <p>Most academic search engines might start by proposing super results or recommending that you use them exclusively and fully trust their support. We think differently at Knobull. The process starts with you.</p>  
+
+                              <p>Our passion is working with students to deliver a cyber-secure world-class academic experience. We love what we do. Our purpose is to simplify and support your life as a student with one stop support systems so that you can give attention to learning and efforts that demand your time!</p> 
+                              
+                              <p>The Knobull Academic Search Engine users have the ability to search through 5 billion academic sources without commercial chatter, chat with your virtual study group, check student news articles, select from a vast array of links to academic resources and receive instant answers to burning questions close at hand!</p> 
+                              
+                              <p>Knobull, Inc. services for Academic and Career success is a ready-to-go environment for learning guidance that uses an academic search engine service, Refseek which is ranked 2nd by The College Post, 4th by The Journal, 7th by Rasmussen College and 8th by a LinkedIn reviewer. Our service searches 5 billion documents without tracking you and we pledge to never distribute or sell your personal data.</p>  
+                              
+                              <p>In addition, we deliver fast answers from the Contact page, provide links to most academic sources on the Resources page, facilitate student collaboration on the Message Board and present timely news articles, picked by students, on the Student News page. The Knobull platform for professional success is now live with thousands of student followers and is supporting students throughout the US and across most academic fields!</p> 
+                              
+                              <p>Our mission is to move academic and career success forward with brave, productive collaboration. We can change education and industries for the better by offering native advertising design and delivery for like-minded customers who want to help build valued academic tools for the student population.</p>  
+                            </div>
+                        </section>
+                        <footer class="bg-light py-5">
+                          <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Knobull</div></div>
+                      </footer>
+                    <!-- </body> -->
+
+                    <center>
+                        <dir-pagination-controls max-size="5"
+                                                 direction-links="true"
+                                                 boundary-links="true">
+                        </dir-pagination-controls>
+                    </center>
+
+
+
+                    <!-- /#page-content-wrapper -->
+
+                </div>
+                <!-- end of main view -->
+                <!-- jQuery -->
+                <script src="js/jquery.js"></script>
+
+                <!-- Bootstrap Core JavaScript -->
+
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+                <script src="scripts/app.js"></script>
+                <script src="scripts/controllers/main.js"></script>
+                <script src="scripts/controllers/about.js"></script>
+                <script src="scripts/controllers/contact.js"></script>
+                <script src="scripts/controllers/messageboard.js"></script>
+                <script src="scripts/controllers/blog.js"></script>
+                <script src="scripts/controllers/privacy.js"></script>
+                <script src="scripts/controllers/learn.js"></script>
+                <script src="scripts/controllers/SearchController.js"></script>
+                <script src="scripts/lib/dirPagination.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+
+                <!--------Bower--->
+
+                <script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+                <script src="bower_components/angular-route/angular-route.js"></script>
+
+                <!-- Menu Toggle Script -->
+                <script>
+                    $("#menu-toggle").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                    });
+                    $("#menu-close").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Default Statcounter code for Business Website https://Knobull.com -->
+    <script type="text/javascript">
+    var sc_project=12383951;
+    var sc_invisible=1;
+    var sc_security="d7c37afd";
+    var sc_https=1;
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12383951/0/d7c37afd/1/" alt="Web Analytics"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+
+</body>
+</html>

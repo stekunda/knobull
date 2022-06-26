@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6337d19a-056a-476d-88ea-2d1e4ee26114}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>app.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'"/>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'"/>
+  <ItemGroup>
+    <Content Include="bower.json"/>
+    <Content Include="package-lock.json"/>
+    <Content Include="package.json"/>
+    <Content Include="README.md"/>
+    <Content Include="app.js"/>
+    <Content Include="config\passport.js"/>
+    <Content Include="models\Comments.js"/>
+    <Content Include="models\Posts.js"/>
+    <Content Include="models\Users.js"/>
+    <Content Include="routes\about.js"/>
+    <Content Include="routes\contact.js"/>
+    <Content Include="routes\home.js"/>
+    <Content Include="routes\mb.js"/>
+    <Content Include="routes\privacy.js"/>
+    <Content Include="routes\users.js"/>
+    <Content Include="views\about.ejs"/>
+    <Content Include="views\contact.ejs"/>
+    <Content Include="views\error.ejs"/>
+    <Content Include="views\home.ejs"/>
+    <Content Include="views\mb.ejs"/>
+    <Content Include="views\privacy.ejs"/>
+    <Content Include="obj\Debug\Kno2.njsproj.FileListAbsolute.txt"/>
+    <Content Include="public\css\about.css"/>
+    <Content Include="public\css\about0.css"/>
+    <Content Include="public\css\bootstrap.css"/>
+    <Content Include="public\css\bootstrap.min.css"/>
+    <Content Include="public\css\contact.css"/>
+    <Content Include="public\css\home.css"/>
+    <Content Include="public\css\main.css"/>
+    <Content Include="public\css\mb.css"/>
+    <Content Include="public\css\privacy.css"/>
+    <Content Include="public\css\simple-sidebar.css"/>
+    <Content Include="public\css\simple-sidebar1.css"/>
+    <Content Include="public\css\simple-sidebar2.css"/>
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg"/>
+    <Content Include="public\images\logo-newcolors.png"/>
+    <Content Include="public\images\logo-small.png"/>
+    <Content Include="public\images\logo-small1.png"/>
+    <Content Include="public\images\logo.png"/>
+    <Content Include="public\images\logo2-fullsize1.png"/>
+    <Content Include="public\images\logogloss.png"/>
+    <Content Include="public\images\privacy-picture.png"/>
+    <Content Include="public\images\IMG-2183.JPG"/>
+    <Content Include="public\images\IMG-2184.JPG"/>
+    <Content Include="public\images\IMG-2185.JPG"/>
+    <Content Include="public\images\IMG-2186.JPG"/>
+    <Content Include="public\images\IMG-2188.JPG"/>
+    <Content Include="public\images\IMG-2189.JPG"/>
+    <Content Include="public\images\IMG-2190.JPG"/>
+    <Content Include="public\images\newlogo.JPG"/>
+    <Content Include="public\images\privacy-picture.JPG"/>
+    <Content Include="public\images\rainbow.jpg"/>
+    <Content Include="public\images\road_sky.jpg"/>
+    <Content Include="public\images\rocket.jpg"/>
+    <Content Include="public\images\sunset.jpg"/>
+    <Content Include="public\images\sun_sky.jpg"/>
+    <Content Include="public\javascripts\angularApp.js"/>
+    <Content Include="public\js\bootstrap.js"/>
+    <Content Include="public\js\bootstrap.min.js"/>
+    <Content Include="public\js\jquery.js"/>
+    <Content Include="public\scripts\app.js"/>
+    <Content Include="public\stylesheets\style.css"/>
+    <Content Include="public\views\about.html"/>
+    <Content Include="public\views\contact.html"/>
+    <Content Include="public\views\images.html"/>
+    <Content Include="public\views\learn.html"/>
+    <Content Include="public\views\main.html"/>
+    <Content Include="public\views\main.html~"/>
+    <Content Include="public\views\privacy.html"/>
+    <Content Include="public\views\search.html"/>
+    <Content Include="public\views\settings.html"/>
+    <Content Include="public\scripts\controllers\about.js"/>
+    <Content Include="public\scripts\controllers\blog.js"/>
+    <Content Include="public\scripts\controllers\contact.js"/>
+    <Content Include="public\scripts\controllers\learn.js"/>
+    <Content Include="public\scripts\controllers\main.js"/>
+    <Content Include="public\scripts\controllers\messageboard.js"/>
+    <Content Include="public\scripts\controllers\privacy.js"/>
+    <Content Include="public\scripts\controllers\SearchController.js"/>
+    <Content Include="public\scripts\lib\dirPagination.js"/>
+    <Content Include=".vscode\launch.json"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin"/>
+    <Folder Include="config"/>
+    <Folder Include="data"/>
+    <Folder Include="data\db"/>
+    <Folder Include="models"/>
+    <Folder Include="obj"/>
+    <Folder Include="obj\Debug"/>
+    <Folder Include="public"/>
+    <Folder Include="public\css"/>
+    <Folder Include="public\fonts"/>
+    <Folder Include="public\images"/>
+    <Folder Include="public\javascripts"/>
+    <Folder Include="public\js"/>
+    <Folder Include="public\scripts"/>
+    <Folder Include="public\scripts\controllers"/>
+    <Folder Include="public\scripts\lib"/>
+    <Folder Include="public\stylesheets"/>
+    <Folder Include="public\views"/>
+    <Folder Include="routes"/>
+    <Folder Include="views"/>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False"/>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets"/>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>&#xD;
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>&#xD;
+          </ExternalProgram>
+          <StartExternalURL>&#xD;
+          </StartExternalURL>
+          <StartCmdLineArguments>&#xD;
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>&#xD;
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

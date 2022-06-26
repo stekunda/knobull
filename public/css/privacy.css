@@ -1,0 +1,114 @@
+*   {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+    background-color: #00aeff;
+    display: block;
+    height: 30vw;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--clr-dark);
+    position: relative;
+}
+
+body {
+    /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img4.jpg); */
+    background-color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+.kno {
+    background-image: url(../images/knobullpic.JPG);
+    
+    text-align: center;
+    width: 10vw;
+    height: 2vw;
+   right: -50%;
+   
+}
+
+header {
+    /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img4.jpg); */
+    background-color: #00aeff;
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    width: 100vw;
+   
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    
+}
+
+section {
+  padding: 1em 0em;
+}
+
+.header_title {
+    background-color: var(--clr-dark);
+    color: white;
+    font-size: 65px;
+    font-size: 6.5vw;
+    text-align: center;
+}
+
+.header_title_2 {
+    color: white;
+    background-color: var(--clr-dark);
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 4.5vw;
+    left: 50%;
+}
+
+.header-text {
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    vertical-align: text-top;
+    color: white;
+    font-size: 36px;
+    font-size: 3vw;
+    width: 80%;
+    height: auto;
+}
+/*
+.para_body {
+    background-color: #00aeff;
+    padding-top: 10%;
+    text-align: left;
+    font-size: 1.5vw;
+    
+}
+*/
+
+p {
+    background-color: white;
+    letter-spacing: 1px;
+    color: black;
+    
+    
+    font-family: Stencil-FS-Regular;
+}
+
+
+.para_body_info {
+    background-color: white;
+    font-size: 23px;
+    /*font-family: Kana-Sans-Medium;*/
+    font-family: Stencil-FS-Regular;
+    margin: 0 auto;
+}
+
+#navicon{
+    font-size:4vw;
+    cursor:pointer;
+    margin-left: 10px;
+    -webkit-margin-top-collapse: collapse;
+}

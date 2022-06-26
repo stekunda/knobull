@@ -1,0 +1,3 @@
+C:\Users\chick\Desktop\Knobull\knobull-10\obj\Debug\knobull.njsprojAssemblyReference.cache
+C:\Users\chick\Desktop\Knobull\knobull-10\obj\Debug\knobull.njsproj.CoreCompileInputs.cache
+C:\Users\chick\Desktop\Knobull\knobull-10\bin\Microsoft.NodejsTools.WebRole.dll

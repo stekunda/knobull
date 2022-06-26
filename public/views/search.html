@@ -1,0 +1,114 @@
+<div ng-controller="SearchController" >
+<div class="container-fluid" >
+<div class="row">
+    <div class="col-md-3">
+      <a href=/#>
+        <img src="images/logogloss.png" alt="I'm a Bulldog" style="width:80px;height:80px"></a>
+    </div>
+    <div class="col-md-9">
+        <div class="input-group">
+             <input type="text" class="form-control " placeholder=""  ng-model="search" style="background-color:white"/>
+            <span class="input-group-addon" ><a href=""><i ng-click="searching(search)" class="fa fa-search fa-2x"></a></i></span>
+        </div>
+        <br/>
+    </div>
+</div>
+
+</div>
+<br/>
+<center>
+ <div class="container-fluid" >
+    <div class="row">
+        <div class="col-md-6">
+            <a href="" ng-click="custom=!custom">Images</a>
+        </div>
+    </div>
+</div> <br/>
+<div class="jumbotron" ng-hide="custom" style="width:100%;heigth:30%">
+<div class="container-fluid">
+    <div class="row">
+    <div ng-repeat="x in data2.results">
+
+            <div class="col-md-4 col-sd-4 col-xs-4 col-lg-4">
+                <img src="{{x.iurl}}" style="heigth:100%;width:100%"></img>
+            </div>
+
+        </div>
+    </div>
+        <br/>
+</div>
+</div>
+<div class="container-fluid" ng-show="custom"></div>
+<!-- <div class="container-fluid" >
+    <div ng-repeat="x in data.results">
+        <div class="row">
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.url}}"> {{x.title}}</a>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <p class="content">{{x.kwic}}</p>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.domain}}" class="domain">{{x.domain}}</p>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>
+<div class="container-fluid" >
+    <div ng-repeat="x in data1.results">
+        <div class="row">
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.url}}"> {{x.title}}</a>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <p class="content">{{x.kwic}}</p>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.domain}}" class="domain">{{x.domain}}</p>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>-->
+
+<div class="container-fluid" >
+    <div dir-paginate="x in data2.results|itemsPerPage:5">
+        <div class="row">
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.url}}"> {{x.title}}</a>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <p class="content">{{x.kwic}}</p>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.domain}}" class="domain">{{x.domain}}</p>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>
+
+<!-- <div class="container-fluid" >
+    <div ng-repeat="x in data3.results">
+        <div class="row">Suggestions
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.url}}"> {{x.title}}</a>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <p class="content">{{x.kwic}}</p>
+            </div>
+            <div class="col-md-12 col-sd-12 col-xs-12 col-lg-12">
+                <a href="{{x.domain}}" class="domain">{{x.domain}}</p>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>--></div>
+
+<dir-pagination-controls
+                    max-size="5"
+                    direction-links="true"
+                    boundary-links="true" >
+                </dir-pagination-controls>
+              </center>

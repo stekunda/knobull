@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.post-body {
+  padding:10px;
+}
+
+.content-container {
+  border-color:#ffffff;
+  border-style: solid;
+  background: #ffffff;
+  margin: 0;
+  padding-bottom: 40px;
+  margin-left:200px;
+  margin-right:200px;
+  margin-bottom:0px;
+  height:auto;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.fixed-top {
+  background-color: black;
+
+}
+
+.navbar-default {
+    background-color: black;
+}
+
+.container {
+  background-color:black;
+  color:white;
+  width:100%;
+}
+
+.topbar {
+  margin-bottom:0px;
+  display: table;
+  width:1475px;
+  margin-left:200px;
+  margin-right:200px;
+  padding: 14px;
+  border: 0;
+  background:black;
+}
+
+.comment {
+  padding:10px;
+}
+
+.login {
+  max-width: 10px;
+  margin-bottom:5px;
+  padding-right:10px;
+  display:table-cell;
+  color:#ffffff;
+  background:black;
+}
+
+.post-submission {
+  height:400px;
+}
+
+.front-page-link {
+  margin-left: 0px;
+  text-decoration: none;
+  padding-right:10px;
+  display:table-cell;
+  color:#ffffff;
+  max-height: 10px;
+  background:black;
+}
+
+.front-page-link a {
+  text-decoration: none;
+  color:#ffffff;
+}
+
+.search {
+  display: table;
+  margin:0 auto;
+  color:#ffffff;
+}
+
+
+.user-toolbar {
+  margin:3px;
+  padding-left: 10px;
+  max-width: 20px;
+  text-align: center;
+  /*border-style:solid;
+  border-color: white;*/
+  display:table-cell;
+  color:#ffffff;
+  background:black;
+}
+
+#username-box * {
+  margin-left:2px;
+  display:inline;
+}
+.user-icon {
+  float:right;
+  display:table-cell;
+  width:15px;
+  height:20px;
+}
+
+.user-image {
+  width: 20px;
+  height:10px;
+  vertical-align: middle;
+  height: auto;
+}
+.user-toolbar * {
+    margin:2px;
+    cursor:pointer;
+}
+
+#notifications {
+  left:10px;
+}
+.main-title {
+  margin-top:50px;
+  margin-right:auto;
+  margin-left:auto;
+  text-align:center;
+  font-family:Helvetica;
+  color:white;
+  font-style: normal;
+  font-weight: bolder;
+  font-size:30px;
+
+}
+
+#options-menu {
+  margin-right:auto;
+  margin-left:auto;
+  height: 100px;
+  text-align: center;
+  line-height:30px;
+}
+
+#menu {
+  margin: auto;
+  float:right;
+  padding: 0px;
+  text-align:center;
+  overflow-x:hidden;
+  white-space:nowrap;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.thread {
+  align-self: center;
+  border-bottom: gray solid 1px;
+  border-top: gray solid 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+.stats {
+  display: table;
+  padding-left: 30px;
+}
+
+#voting{
+   display: table-cell;
+   width:40px;
+   height:40px;
+   line-height: 20em;
+   margin-left:30px;
+}
+.upvote {
+  display: table-cell;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid gray;
+  margin-top:10px;
+  cursor:pointer;
+}
+.downvote {
+  margin-top:10px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid gray;
+  cursor:pointer;
+}
+
+.up {
+  display: table-cell;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid green;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+.down {
+  margin-top:10px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid red;
+  cursor:pointer;
+}
+
+.stat {
+  display: table-cell;
+  list-style-type: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align:center;
+}
+
+.question {
+  /*border-color:black;
+  border-style:solid;*/
+  word-wrap: break-word;
+  width:730px;
+  padding-bottom:15px;
+  padding-left: 40px;
+  text-indent:-80px;
+}
+.question-title {
+  word-wrap: break-word;
+  padding-right: 100px;
+  margin-left:80px;
+}
+.question-title a {
+  word-wrap: break-word;
+  padding-right: 100px;
+  color: #2b2bf6;
+  font-family:"Arial";
+  text-decoration: none;
+  font-size:25px;
+}
+
+.submission {
+    display: block;
+}
+
+.submission-data {
+  font-family: "Arial";
+  margin-top:5px;
+  margin-left: 80px;
+  margin-bottom:0px;
+}
+
+.caption {
+  display:block;
+}
+#sidebar {
+  width: 200px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  background: #f0e811;
+}
+#content {
+  width: 700px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  background: #8be0ef;
+}
+#footer {
+  width: 900px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  background: #000000;
+  clear:both;
+}

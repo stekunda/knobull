@@ -1,0 +1,36 @@
+<div class="container-fluid" >
+<div class="row">
+    <div class="col-md-3">
+        <img src="images/logogloss.png" alt="I'm a Bulldog" style="width:80px;height:80px">
+    </div>
+    <div class="col-md-9">
+        <div class="input-group">
+             <input type="text" class="form-control " placeholder=""  ng-model="search" style="background-color:white"/> 
+            <span class="input-group-addon" ><a href="#/search"><i ng-click="searching(search)" class="fa fa-search fa-2x"></a></i></span>
+        </div>
+        <br/>
+    </div>
+</div>
+
+</div>
+<br/>
+
+ <div class="container-fluid" > 
+    <div class="row">
+        <div class="col-md-6">
+            <a href="#/images">Images</a>
+        </div>
+    </div>
+</div> <br/>
+
+<div class="container-fluid" > 
+    <div ng-repeat="x in data2.results">
+        <div class="row">
+            <div class="col-md-4 col-sd-4 col-xs-4 col-lg-4">
+                <img ng-src={{x.iurl}}></img>
+            </div>
+            
+        </div>
+    </div>
+        <br/>
+</div>

@@ -1,0 +1,352 @@
+$icon-font-path: ../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/;
+/* bower:scss */
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+/* endbower */
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  border-top: solid 5px #00CCFF ;
+  /*background-color:#666 #F5F5F5;*/
+}
+.left{
+  float:left;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+/* Search style*/
+.search-logo{
+  margin: 50px 0;
+}
+
+.search-input{
+  margin: 20px 0;
+}
+
+.content{
+  color: #333333;
+}
+.domain{
+  color:#bd4b2b;
+}
+.ng-table {
+    border: 1px solid #000;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 10px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+/*iphone 5s */
+@media screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .sidenav {padding-top: 5px;}
+  .sidenav a {font-size: 10px;}
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait){
+  .sidenav {padding-top: 5px;}
+  .sidenav a {font-size: 10px;}
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.navbar,.navbar-default,.footer,.navbar-fixed-bottom{
+background-color:#00CCFF
+
+}
+
+.form-control{
+  font-size: 1.14em;
+  background-color: #fff;
+  border: 1px solid #cccdc8;
+  border-radius: 2px;
+  height: 2.8em;
+       /*width:40em !important;*/
+
+}
+
+
+
+.header__button, .header__button--menu, .header__button:visited, .header__button--menu:visited, .header__button:focus, .header__button--menu:focus, .header__button:hover, .header__button--menu:hover {
+    color: #a5a5a5;
+}
+
+.header__button, .header__button--menu {
+    display: block;
+    float: right;
+    top: 1px;
+    z-index: 10;
+}
+
+.btn--icon, .btn--top, .header__button, .header__button--menu {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+     font-family: "ddg-serp-icons" !important;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal !important;
+    height: 33px;
+    line-height: 34px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+        text-decoration: none !important;
+    text-indent: 1px;
+    text-shadow: none;
+    text-transform: none;
+    transition: background-color 0.1s ease 0s, color 0.1s ease 0s;
+    vertical-align: middle;
+    width: 33px;
+}
+
+.btn, .button, .btn--icon, .btn--top, .header__button, .header__button--menu {
+    -moz-appearance: none;
+    background-color: #fafafa;
+    border-color: #ddd;
+    color: #333;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2;
+    outline: medium none !important;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    transition: none 0.3s ease-in-out 0s ;
+}
+
+
+.header__button, .header__button--menu, .header__button:visited, .header__button--menu:visited, .header__button:focus, .header__button--menu:focus,  .header__button--menu:hover {
+   color: #a5a5a5;  
+   color: black;
+
+}
+
+.input-group-addon:hover{
+  background-color: #99E6E6; 
+
+
+
+}
+.header__button, .header__button--menu {
+    display: block;
+    float: right;
+    top: 1px;
+    z-index: 10;
+}
+.btn--icon, .btn--top, .header__button, .header__button--menu {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    font-family: "ddg-serp-icons" !important;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal !important;
+    height: 33px;
+    line-height: 34px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    text-indent: 1px;
+    text-shadow: none;
+    text-transform: none;
+    transition: background-color 0.1s ease 0s, color 0.1s ease 0s;
+    vertical-align: middle;
+    width: 0px;
+}
+.btn, .button, .btn--icon, .btn--top, .header__button, .header__button--menu {
+    -moz-appearance: none;
+    background-color: #fafafa;
+    border-color: #ddd;
+    color: #333;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2;
+    outline: medium none !important;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    transition: none 0.3s ease-in-out 0s ;
+}
+.button, .butt, .btn, .btn, .button, .btn--icon, .btn--top, .header__button, .header__button--menu {
+    cursor: pointer;
+}
+
+.button, .butt, .btn, .tag, .btn, .button, .btn--icon, .btn--top, .header__button, .header__button--menu {
+    -moz-user-select: none;
+    background-color: #f8f8f8;
+    border: 0px solid #babec9;
+    border-radius: 0.25em;
+    box-sizing: content-box;
+      color: #474747;
+    display: inline-block;
+    line-height: 2.5;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 0em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+       vertical-align: middle;
+    white-space: nowrap;
+}
+
+a {
+    color: #4495d4;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.nav-menu--slideout .nav-menu__list::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 15em;
+}
+
+.nav-menu--slideout .nav-menu__list {
+     background-color: white;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 1.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav-menu ul, .nav-menu--slideout ul {
+     background-color: white;
+    list-style: outside none none;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.nav-menu__list {
+     background-color: white;
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.input-group-addon{
+  background-color:white;
+
+}
+@media (max-width: 480px) {
+
+   img{
+        padding-top: 0%;
+        width:20em;
+  }
+}
+@media screen and (max-width: 480px) {
+    img{
+        padding-top: 0%;
+        width:20em;
+  }
+
+}
+img{
+  width:20em;
+
+}
+
+.container {
+	border: 1px solid #DDDDDD;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	}
+
+  .tag{
+    float: Center;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color:green;
+  }
