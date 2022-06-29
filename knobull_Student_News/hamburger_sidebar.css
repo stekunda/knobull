@@ -1,0 +1,114 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 240px;
+}
+
+#sidebar-wrapper {
+    z-index: 0;
+    position: fixed;
+    left: 240px;
+    width: 0;
+    height: 100%;
+    margin-left: -240px;
+    overflow-y: auto;
+    background: #48D1CC;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 240px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: relative;;
+    margin-right: -240px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
+
+/*nav text*/
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 1px 2px;
+    text-align: center;
+    text-decoration: none;
+   
+    display: inline-block;
+    font-size: 15px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button4 {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 0px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 15px;}
+}
+
+
+#navicon{
+    font-size:4vw;
+    cursor:pointer;
+    margin-left: 00px;
+    -webkit-margin-top-collapse: collapse;
+}
